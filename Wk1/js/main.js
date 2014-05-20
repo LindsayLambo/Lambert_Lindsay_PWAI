@@ -48,3 +48,13 @@
             result="You Both Die";
         } else if(fighter1Health<1){
             result=fighter2Name+" WINS!!!"
+            } else if(fighter2Health<1)
+        {
+            result=fighter1Name+" WINS!!!"
+        };
+       return result;
+    };
+/* The fight is initiated or called */
+   fight();
+
+})();
