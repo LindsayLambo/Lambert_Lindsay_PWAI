@@ -32,3 +32,13 @@
             if (result==="no winner")
             {
                 round++;
+                 alert(fighter1Name+":"+fighter1Health+"  *ROUND "+round+" OVER"+"*  "+fighter2Name+":"+fighter2Health);
+
+            } else{
+                alert(result);
+                break;
+            };
+
+          };
+    };
+    function winnerCheck(){
