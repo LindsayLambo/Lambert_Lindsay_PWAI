@@ -13,4 +13,13 @@
     var fighter2Health=100;
     //initiating the round
     var round=0;
+    function fight(){
+        alert(fighter1Name+":"+fighter1Health+"  *START*  "+fighter2Name+":"+fighter2Health);
+        for (var i=0;i<10;i++)
+        {
+            //this is the formula for telling the computer to pick out a random number -Math.floor(Math.random()*(max - min) + min);
+            var minDamage1=fighter1Damage*.5;
+            var minDamage2=fighter2Damage *.5;
+            var f1=Math.floor(Math.random()*(fighter1Damage-minDamage1)+minDamage1);
+            var f2=Math.floor(Math.random()*(fighter2Damage-minDamage2)+minDamage2);
     
