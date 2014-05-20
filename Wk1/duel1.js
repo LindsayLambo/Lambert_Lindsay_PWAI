@@ -22,4 +22,7 @@
             var minDamage2=fighter2Damage *.5;
             var f1=Math.floor(Math.random()*(fighter1Damage-minDamage1)+minDamage1);
             var f2=Math.floor(Math.random()*(fighter2Damage-minDamage2)+minDamage2);
-    
+            //inflicting damage and pain! 
+            fighter1Health-=f1;
+            fighter2Health-=f2;
+            console.log(fighter1Name+": "+fighter1Health+ " " +fighter2Name+":"+fighter2Health);
