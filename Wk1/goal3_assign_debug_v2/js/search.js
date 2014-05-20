@@ -50,7 +50,7 @@
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
+				var qItem = queryArray[ii].toLowerCase();
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
@@ -58,13 +58,13 @@
 				if(compare !== -1){
 					results.push(db[i]);
 				};
-			;
-		;
+			};
+		};
 		
 		results.sort();
 		
 		// Check that matches were found, and run output functions
-		if(results.length = 0){
+		if(results.length === 0){
 			noMatch();
 		}else{
 			showMatches(results);
