@@ -42,3 +42,9 @@
           };
     };
     function winnerCheck(){
+         var result="no winner";
+        if (fighter1Health<1 && fighter2Health<1)
+        {
+            result="You Both Die";
+        } else if(fighter1Health<1){
+            result=fighter2Name+" WINS!!!"
