@@ -26,3 +26,9 @@
             fighter1Health-=f1;
             fighter2Health-=f2;
             console.log(fighter1Name+": "+fighter1Health+ " " +fighter2Name+":"+fighter2Health);
+            //checks for a winner
+            var result=winnerCheck();
+            console.log(result);
+            if (result==="no winner")
+            {
+                round++;
