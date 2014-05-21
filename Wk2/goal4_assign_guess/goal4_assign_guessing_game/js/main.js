@@ -28,7 +28,24 @@ var clickFunction=function(e){
 };
 //Since the the guesses, or users' input, are clicks, we have to validate and call the timeToPlay() function
 var validatePlayerInput=function(){
-	playerGuess
+	playerGuess=parseInt(dom.input.value);
+//Checking for the proper data type
+	if(isNAN(playerGuess)){
+		dom.output.innerHTML="Please enter a number as your guess.";
+	}else if(playerGuess<1 || playerGuess>10){
+		dom.output.innerHTML="Please enter a number between 1 and 10 as your guess!";
+	}else{
+		timeToPlay();
+	};
+};
+//Initializing counters from previous variables and play the game
+var timeToPlay=function(){
+	guessesLeft--;
+	guessesSoFar++;
+	gameState="Guess: "+guessesSoFar+", Guesses Left: "+guessesLeft;
+	//Now we have to compare the guess to the magic number
+	playerGuess=parseInt(input.value);
+	if()
 }
 
 
