@@ -52,7 +52,19 @@ var timeToPlay=function(){
 	}else if(playerGuess===magicNumber){   // if the player wins by guessing the number, the game is over, so false will pass through gameIsOver()
 		gameIsOver(false);
 	};
-}
+};
+var gameIsOver=function(win){
+	if(win){
+		dom.output.innerHTML
+			="Yes, it is "+magicNumber+"!"+"<br>"
+			+"It only took you "+guessesSoFar+" guesses!";
+	}else{
+		dom.output.innerHTML
+			="You don't have anymore guesses!"+"<br>"
+			+"The number was "+magicNumber+".";
+		};	
+	};
+};
 
 
 
