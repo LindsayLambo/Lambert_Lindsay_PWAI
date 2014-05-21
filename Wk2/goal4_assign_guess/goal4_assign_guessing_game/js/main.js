@@ -64,16 +64,5 @@ var gameIsOver=function(win){
 			+"The number was "+magicNumber+".";
 		};	
 	};
-};
-
-
-
-
-
-
-
-
-
-}
 
 })();
