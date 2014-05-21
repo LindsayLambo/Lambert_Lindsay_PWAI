@@ -45,7 +45,13 @@ var timeToPlay=function(){
 	gameState="Guess: "+guessesSoFar+", Guesses Left: "+guessesLeft;
 	//Now we have to compare the guess to the magic number
 	playerGuess=parseInt(input.value);
-	if()
+	if(playerGuess>magicNumber){     
+		dom.output.innerHTML="That's too high!"+gameState;
+	}else if(playerGuess<magicNumber){
+		dom.output.innerHTML="That's too low!"+gamestate;
+	}else if(playerGuess===magicNumber){   // if the player wins by guessing the number, the game is over, so false will pass through gameIsOver()
+		gameIsOver(false);
+	};
 }
 
 
