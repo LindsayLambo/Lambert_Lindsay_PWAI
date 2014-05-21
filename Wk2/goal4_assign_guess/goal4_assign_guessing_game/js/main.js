@@ -1,11 +1,6 @@
-/**
- * GUESSING GAME:
- *
- * Created By: Lindsay Lambert
- * Date: 5 May 21, 2014
- * 
- * GUESSING GAME
- */
+// GUESSING GAME:
+// Created By: Lindsay Lambert
+// Date: 5 May 21, 2014
 
 //Game variables
 (function ()
@@ -64,5 +59,3 @@ var gameIsOver=function(win){
 			+"The number was "+magicNumber+".";
 		};	
 	};
-
-})();
